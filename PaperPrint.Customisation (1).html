@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperPrint - Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 background-color: #F5F5F5; /* Light Gray */
+            color: #333333; /* Dark Gray */
+        }
+        .header, .footer {
+            background-color: #1E3A5F; /* Dark Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .title { 
+            margin: 0; 
+            color: #c54c3d; /* Dark Red Color for Title */
+        }
+        .slogan { 
+            font-size: 14px; 
+            font-style: italic; 
+        }
+        .nav ul { 
+            list-style-type: none; 
+            padding: 0; 
+        }
+        .nav li { 
+            display: inline; 
+            margin: 0 15px; 
+        }
+        .nav a { 
+            color: white; 
+            text-decoration: none; 
+        }
+        .icons {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 0 5px; /* Adjusted spacing between emojis */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .product-list { padding: 20px; }
+        .product-item {
+            background-color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer { font-size: 0.8em; }
+        .emoji {
+            font-size: 24px; /* Set a consistent size for emojis */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" style="float: left; margin-right: 20px;">
+            <img src="logo.png" alt="PaperPrint Logo" style="height: 50px;"> <!-- Replace with your logo -->
+        </div>
+        <h1 class="title">PaperPrint</h1>
+        <p class="slogan">Precision, Quality, and Creativity in Every Print</p>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="customization.html">Customization</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="dropdown">
+                <button class="dropbtn emoji">🌍</button>
+                <div class="dropdown-content">
+                    <h6 class="dropdown-header">Select Country</h6>
+                    <a href="#">USA</a>
+                    <a href="#">UK</a>
+                    <a href="#">France</a>
+                    <a href="#">Spain</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn emoji">⚙️</button>
+                <div class="dropdown-content">
+                    <h6 class="dropdown-header">Select Language</h6>
+                    <a href="#">English</a>
+                    <a href="#">Spanish</a>
+                    <a href="#">French</a>
+                    <a href="#">German</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn emoji">💬</button>
+                <div class="dropdown-content">
+                    <h6 class="dropdown-header">Chat Options</h6>
+                    <a href="mailto:info@paperprint.com">Email Us</a>
+                    <a href="tel:+1234567890">Call Us</a>
+                    <a href="#">Live Chat</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="product-list">
+        <h2>Our Products</h2>
+        <div class="product-item">
+            <h3>Product 1</h3>
+            <p>Description of Product 1.</p>
+            <p>Price: $10.00</p>
+        </div>
+        <div class="product-item">
+            <h3>Product 2</h3>
+            <p>Description of Product 2.</p>
+            <p>Price: $15.00</p>
+        </div>
+        <div class="product-item">
+            <h3>Product 3</h3>
+            <p>Description of Product 3.</p>
+            <p>Price: $20.00</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Contact Us: info@paperprint.com | Phone: (123) 456-7890 | Address: 123 Print St, Print City, PC 12345</p>
+        <p>
+            <a href="index.html" style="color: white;">Home</a> | 
+            <a href="products.html" style="color: white;">Products</a> | 
+            <a href="services.html" style="color: white;">Services</a> | 
+            <a href="customization.html" style="color: white;">Customization</a>
+        </p>
+    </footer>
+</body>
+</html>
